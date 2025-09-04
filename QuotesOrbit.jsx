@@ -1,14 +1,21 @@
+/**
+ * 🙏 If this repo helped you, please consider giving it a ⭐️ on GitHub!
+ * QuotesOrbit: A React component that displays a centered logo surrounded by rotating quote bubbles.
+ *
+ * This component creates an engaging visual effect where quotes move inward (contract) as the user
+ * scrolls down the page and outward (expand) as the user scrolls up. The movement is based on the
+ * scroll position within the component's section.
+ *
+ * Key features:
+ * - Displays a set of quotes in bubbles arranged radially around a central logo.
+ * - Dynamically adjusts the radius of the orbit based on the user's scroll position.
+ * - Provides a visually appealing way to present quotes or testimonials.
+ * - Includes styled components for easy customization.
+ */
+
 import React, { useEffect, useMemo, useRef, useState, forwardRef } from 'react';
 import styled from 'styled-components';
 import { getAssetPath } from '../../utils/assetUtils';
-
-/*
-  QuotesOrbit:
-  - Shows a centered logo with multiple quote bubbles positioned radially around it.
-  - As the user scrolls DOWN through this section, quotes move inward (contract).
-  - As the user scrolls UP, quotes move outward (expand).
-  - Progress is calculated based on scroll position within this section.
-*/
 
 const QUOTES = [
   "The biggest shift in marketing today is that customers no longer just buy products — they buy into the story you tell.",
