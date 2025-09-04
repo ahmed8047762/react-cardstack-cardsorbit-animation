@@ -1,3 +1,23 @@
+/**
+ * 🙏 If this repo helped you, please consider giving it a ⭐️ on GitHub!
+ * 
+ * FeatureStack.jsx
+ * 
+ * This component renders an interactive, animated stack of feature cards.
+ * As the user scrolls, cards "stick" to the top in a cascading fashion,
+ * simulating a card-stack animation effect. This is achieved via manual DOM
+ * manipulation and scroll-based calculations, enabling smooth transitions,
+ * overlapping, and dynamic z-indexing for each card.
+ * 
+ * Key features:
+ * - Each card highlights a feature (title, description, image).
+ * - Cards overlap and animate into place as you scroll down.
+ * - The stack is fully responsive and adjusts for scrollbar width.
+ * - After the feature cards, a QuotesOrbit component is rendered.
+ * 
+ * Useful for landing pages with a feature showcase or onboarding flows.
+ */
+
 import React, { useEffect, useRef } from 'react';
 import { getAssetPath } from '../../utils/assetUtils';
 import QuotesOrbit from './QuotesOrbit';
