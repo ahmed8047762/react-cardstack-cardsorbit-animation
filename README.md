@@ -112,5 +112,3 @@ MIT
 
 If this repository has helped you in any way, please don't forget to give it a star to appreciate the hard work done by me :)
 ---
-
-*If you want, I can scaffold this repo (with a minimal Vite React example, an index that exports both components, and the above README) and push it to GitHub.*
